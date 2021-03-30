@@ -118,7 +118,7 @@
       "productName": "Pavlova",
       "quantityPerUnit": "32 - 500 g boxes",
       "unitPrice": 17.45,
-      "unitsInStock": 29
+      "unitsInStock": "40"
     },
     {
       "id": 17,
@@ -615,6 +615,14 @@
       "quantityPerUnit": "1",
       "unitsInStock": "2",
       "id": 78
+    },
+    {
+      "productName": "oguz",
+      "categoryId": 1,
+      "unitPrice": "23",
+      "quantityPerUnit": "123",
+      "unitsInStock": "123",
+      "id": 79
     }
   ],
   "categories": [

@@ -5,6 +5,7 @@ import { Badge, Table, Button } from 'reactstrap';
 import * as productActions from '../../redux/actions/productActions';
 import * as cartActions from '../../redux/actions/cartActions';
 import alertify from 'alertifyjs';
+import { Link } from 'react-router-dom';
 
 const ProductList = (props) => {
     useEffect(() => {
@@ -39,7 +40,11 @@ const ProductList = (props) => {
                     {props.products.map((product) => (
                         <tr key={product.id}>
                             <td scope="row">{product.id}</td>
-                            <td>{product.productName}</td>
+                            <td>
+                                <Link to={'/saveproduct/' + product.id}>
+                                    {product.productName}
+                                </Link>
+                            </td>
                             <td>{product.unitPrice}</td>
                             <td>{product.quantityPerUnit}</td>
                             <td>{product.unitsInStock}</td>
